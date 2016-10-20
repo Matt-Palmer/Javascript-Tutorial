@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Boolean Operators</title>
+    
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <section id="logical-not" class="container">
+        <div class="inner-container">
+
+            <h4>Logical NOT Operator</h4>
+
+            <div class="content-container">
+                <div class="content-left">
+
+                    <p>"String"</p>
+
+                    <button type="button" onclick="strReturnsTrue()" style="display: block;">Will this string ruturn true or false?</button>
+                    <br>
+                    <p id="display-boolean-state"></p>
+
+                </div>
+
+                <div class="content-right">
+                    <ul>
+                        <li>If the variable is an <strong>Object</strong>, then we return "false"</li>
+                        <li>If the variable is an <strong>empty String</strong>, then we return "true"</li>
+                        <li>If the variable is a <strong>non-empty string</strong>, then we return "false"</li>
+                        <li>If the variable is the <strong>number 0</strong>, then we return "true"</li>
+                        <li>If the variable is <strong>any other number than 0</strong>, then we return "false"</li>
+                        <li>If the variable is an <strong>Null</strong>, then we return "true"</li>
+                        <li>If the variable is an <strong>NaN</strong>, then we return "true"</li>
+                        <li>If the variable is an <strong>undefined</strong>, then we return "true"</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="logical-and" class="container">
+        <div class="inner-container">
+
+            <h4>Logical OR Operator</h4>
+
+            <div class="content-container">
+                <div class="content-left">
+
+                    <div class="input-group">
+                        <label for="">Enter a string in to one of the boxes below: </label>
+                        <input type="text" name="this" id="this">
+                        <input type="text" name="that" id="that">
+                    </div>
+
+                    <button type="button" onclick="thisOrThat()" style="display: block;">Will this string ruturn true or false?</button>
+                    <br>
+                    <p id="display-state"></p>
+
+                </div>
+
+                <div class="content-right">
+                    <ul>
+                        <li>If the first operand is an object then the first operand will be returned.</li>
+                        <li>If the first operand is 'false' then the second operand is returned.</li>
+                        <li>If both operands are objects then the first operand is reurned.</li>
+                        <li>If both operands are null, then null is returned</li>
+                        <li>If both operands are undefined, then undefined is returned</li>
+                        <li>If both operands are NaN, then NaN is returned</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="logical-and" class="container">
+        <div class="inner-container">
+
+            <h4>Logical AND Operator</h4>
+
+            <div class="content-container">
+                <div class="content-left">
+
+                    <div class="input-group">
+                        <label for="">Enter a string in to one of the boxes below: </label>
+                        <input type="text" name="this" id="this2">
+                        <input type="text" name="that" id="that2">
+                    </div>
+
+                    <button type="button" onclick="thisAndThat()" style="display: block;">Will this string ruturn true or false?</button>
+                    <br>
+                    <p id="display-state2"></p>
+
+                </div>
+
+                <div class="content-right">
+                    <ul>
+                        <li>If the first operand is an object, then the second operand is always returned.</li>
+                        <li>if the second operand is an object, then the object is returned only if the first operand is true.</li>
+                        <li>If both operands are objects then the second operand is returned.</li>
+                        <li>If either operand is null then null is returned.</li>
+                        <li>If either operand is undefined then undefined is returned.</li>
+                        <li>If either operand is NaN then NaN is returned.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script type='text/javascript' src="boolean-operators.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+                <h3>Binary Calculator</h3>
+                
+                <section id="binary-to-decimal" class="container">
+                    <div class="calculator-container">
+
+                        <h4>Binary to Decimal</h4>
+                        
+                        <div class="content-container">
+                            <div class="content-left">
+                              
+                                <div class="input-group">
+                                    <label for="binary">Enter a Binary value: </label>
+                                    <input type="text" name="binary" id="binary-value" class="array-item">
+                                </div>
+                               
+                                <button type="button" onclick="convertBinaryToNumber()" style="display: block;">Convert to Decimal</button>
+                                <br>
+                                <p id="display-binary-value"></p>
+                                
+                            </div>
+                            
+                            <div class="content-right">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, explicabo doloribus ea, similique enim neque at, laboriosam nisi eligendi rem libero omnis. Quos nostrum fugit, sequi amet. Quaerat, vitae inventore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="decimal-to-binary" class="container">
+                    <div class="calculator-container">
+
+                        <h4>Decimal to Binary</h4>
+                        
+                        <div class="content-container">
+                            <div class="content-left">
+                              
+                                <div class="input-group">
+                                    <label for="decimal">Enter a Decimal value: </label>
+                                    <input type="text" name="decimal" id="string-value" class="array-item">
+                                </div>
+                               
+                                <button type="button" onclick="convertNumberToBinary()" style="display: block;">Convert to Binary</button>
+                                <br>
+                                <p id="display-binary"></p>
+                                
+                            </div>
+                            
+                            <div class="content-right">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, explicabo doloribus ea, similique enim neque at, laboriosam nisi eligendi rem libero omnis. Quos nostrum fugit, sequi amet. Quaerat, vitae inventore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="decimal-to-binary" class="container">
+                    <div class="calculator-container">
+
+                        <h4>AND Binary</h4>
+                        
+                        <div class="content-container">
+                            <div class="content-left">
+                              
+                                <div class="input-group">
+                                    <label for="binary-and-1">Enter a Binary number: </label>
+                                    <input type="text" name="binary-and-1" id="binary-value1" class="array-item">
+                                </div>
+                                <div class="input-group">
+                                    <label for="binary-and-2">Enter another Binary number: </label>
+                                    <input type="text" name="binary-and-2" id="binary-value2" class="array-item">
+                                </div>
+                               
+                                <button type="button" onclick="bitwiseAndOperator()" style="display: block;">Calculate AND result</button>
+                                <br>
+                                <p id="display-and-binary"></p>
+                                
+                            </div>
+                            
+                            <div class="content-right">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, explicabo doloribus ea, similique enim neque at, laboriosam nisi eligendi rem libero omnis. Quos nostrum fugit, sequi amet. Quaerat, vitae inventore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="decimal-to-binary" class="container">
+                    <div class="calculator-container">
+
+                        <h4>OR Binary</h4>
+                        
+                        <div class="content-container">
+                            <div class="content-left">
+                              
+                                <div class="input-group">
+                                    <label for="binary-or-1">Enter a Binary number: </label>
+                                    <input type="text" name="binary-or-1" id="binary-or-value1" class="array-item">
+                                </div>
+                                <div class="input-group">
+                                    <label for="binary-or-2">Enter another Binary number: </label>
+                                    <input type="text" name="binary-or-2" id="binary-or-value2" class="array-item">
+                                </div>
+                               
+                                <button type="button" onclick="bitwiseOrOperator()" style="display: block;">Calculate OR result</button>
+                                <br>
+                                <p id="display-or-binary"></p>
+                                
+                            </div>
+                            
+                            <div class="content-right">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, explicabo doloribus ea, similique enim neque at, laboriosam nisi eligendi rem libero omnis. Quos nostrum fugit, sequi amet. Quaerat, vitae inventore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="decimal-to-binary" class="container">
+                    <div class="calculator-container">
+
+                        <h4>XOR Binary</h4>
+                        
+                        <div class="content-container">
+                            <div class="content-left">
+                              
+                                <div class="input-group">
+                                    <label for="binary-xor-1">Enter a Binary number: </label>
+                                    <input type="text" name="binary-xor-1" id="binary-xor-value1" class="array-item">
+                                </div>
+                                <div class="input-group">
+                                    <label for="binary-xor-2">Enter another Binary number: </label>
+                                    <input type="text" name="binary-xor-2" id="binary-xor-value2" class="array-item">
+                                </div>
+                               
+                                <button type="button" onclick="bitwiseXorOperator()" style="display: block;">Calculate XOR result</button>
+                                <br>
+                                <p id="display-xor-binary"></p>
+                                
+                            </div>
+                            
+                            <div class="content-right">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, explicabo doloribus ea, similique enim neque at, laboriosam nisi eligendi rem libero omnis. Quos nostrum fugit, sequi amet. Quaerat, vitae inventore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="decimal-to-binary" class="container">
+                    <div class="calculator-container">
+
+                        <h4>NOT Binary</h4>
+                        
+                        <div class="content-container">
+                            <div class="content-left">
+                              
+                                <div class="input-group">
+                                    <label for="binary-not">Enter a Binary number: </label>
+                                    <input type="text" name="binary-not" id="binary-not-value1" class="array-item">
+                                </div>
+                               
+                                <button type="button" onclick="bitwiseNotOperator()" style="display: block;">Calculate NOT result</button>
+                                <br>
+                                <p id="display-not-binary"></p>
+                                <p id="display-not-int"></p>
+                                
+                            </div>
+                            
+                            <div class="content-right">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, explicabo doloribus ea, similique enim neque at, laboriosam nisi eligendi rem libero omnis. Quos nostrum fugit, sequi amet. Quaerat, vitae inventore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="decimal-to-binary" class="container">
+                    <div class="calculator-container">
+
+                        <h4>Shift Left Binary</h4>
+                        
+                        <div class="content-container">
+                            <div class="content-left">
+                              
+                                <div class="input-group">
+                                    <label for="binary-sl-1">Enter a Binary number: </label>
+                                    <input type="text" name="binary-sl-1" id="binary-sl-value1" class="array-item">
+                                </div>
+                                <div class="input-group">
+                                    <label for="binary-sl-2">Enter amount to shift: </label>
+                                    <input type="text" name="binary-sl-2" id="binary-sl-value2" class="array-item">
+                                </div>
+                               
+                                <button type="button" onclick="bitwiseShiftLeftOperator()" style="display: block;">Shift Binary to Left</button>
+                                <br>
+                                <p id="display-sl-binary"></p>
+                                
+                            </div>
+                            
+                            <div class="content-right">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, explicabo doloribus ea, similique enim neque at, laboriosam nisi eligendi rem libero omnis. Quos nostrum fugit, sequi amet. Quaerat, vitae inventore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="decimal-to-binary" class="container">
+                    <div class="calculator-container">
+
+                        <h4>Shift Right Binary</h4>
+                        
+                        <div class="content-container">
+                            <div class="content-left">
+                              
+                                <div class="input-group">
+                                    <label for="binary-sr-1">Enter a Binary number: </label>
+                                    <input type="text" name="binary-sr-1" id="binary-sr-value1" class="array-item">
+                                </div>
+                                <div class="input-group">
+                                    <label for="binary-sr-2">Enter amount to shift: </label>
+                                    <input type="text" name="binary-sr-2" id="binary-sr-value2" class="array-item">
+                                </div>
+                               
+                                <button type="button" onclick="bitwiseSignedShiftRightOperator()" style="display: block;">Shift Binary to Right</button>
+                                <br>
+                                <p id="display-sr-binary"></p>
+                                
+                            </div>
+                            
+                            <div class="content-right">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, explicabo doloribus ea, similique enim neque at, laboriosam nisi eligendi rem libero omnis. Quos nostrum fugit, sequi amet. Quaerat, vitae inventore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+
+<script type="text/javascript" src="javascript.js"></script>
+<script type="text/javascript" src="numbers.js"></script>
+</body>
+</html>
