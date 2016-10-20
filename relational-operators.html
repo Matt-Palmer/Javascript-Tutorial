@@ -3,58 +3,106 @@
 
 <head>
     <title>Relational Operators</title>
-    
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <section id="less-than">
-        <h3>Less Than Operator</h3>
-        <label for="num1">Enter a string or number: </label>
-        <input type="text" name="num1" id="num1">
-        <p>&lt;</p>
-        <label for="num2">Enter another string or number: </label>
-        <input type="text" name="num2" id="num2">
+    <section id="less-than" class="container">
 
-        <button type="button" id="submitlt" onclick="lessThan()">Make Comparison of numbers</button>
+        <div class="inner-container">
+           
+            <h3>Less Than Operator</h3>
+            
+            <div class="content-container">
+               
+                <div class="content-left">
 
-        <button type="button" id="submitlt" onclick="lessThanString()">Make Comparison of string</button>
+                    <div class="input-group">
+                       
+                        <label for="num1">Enter a string or number: </label>
+                        <input type="text" name="num1" id="num1">
+                        
+                        <p>&lt;</p>
+                        
+                        <label for="num2">Enter another string or number: </label>
+                        <input type="text" name="num2" id="num2">
+                        
+                    </div>
+                    
+                    <button type="button" id="submitlt" onclick="lessThan()">Make Comparison of numbers</button>
 
-        <p id="ltresult"></p>
+                    <button type="button" id="submitlt" onclick="lessThanString()">Make Comparison of string</button>
 
-        <ul>
-            <li>if the operands are numbers, then a numeric comparison is performed.</li>
-            <li>Ifthe operands are strings, then the character codes of each character will be compared.</li>
-            <li>If only one operand is a number then the other is converted to a number and a comparison is made.</li>
-            <li>If an operand is an object, call <i>valueOf()</i> and use its result to make a comparison whilst sticking to the rules stated above, if <i>valueOf()</i> is not available, call <i>toString()</i> and use that value according the the rules above.</li>
-            <li>If the operand is a Boolean, then it is converted to a number and a comparison is made.</li>
-        </ul>
+                    <p id="ltresult"></p>
+                    
+                </div>
+                
+                <div class="content-right">
+                   
+                    <ul>
+                        <li>if the operands are numbers, then a numeric comparison is performed.</li>
+                        <li>Ifthe operands are strings, then the character codes of each character will be compared.</li>
+                        <li>If only one operand is a number then the other is converted to a number and a comparison is made.</li>
+                        <li>If an operand is an object, call <i>valueOf()</i> and use its result to make a comparison whilst sticking to the rules stated above, if <i>valueOf()</i> is not available, call <i>toString()</i> and use that value according the the rules above.</li>
+                        <li>If the operand is a Boolean, then it is converted to a number and a comparison is made.</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <section id="greater-than">
-        <h3>Greater Than Operator</h3>
-        <label for="num1">Enter a string or number: </label>
-        <input type="text" name="num1" id="gtnum1">
-        <p>&gt;</p>
-        <label for="num2">Enter another string or number: </label>
-        <input type="text" name="num2" id="gtnum2">
 
-        <button type="button" id="submitlt" onclick="greaterThan()">Make Comparison of numbers</button>
+    <section id="greater-than" class="container">
+       
+        <div class="inner-container">
+           
+            <h3>Greater Than Operator</h3>
+            
+            <div class="content-container">
+               
+                <div class="content-left">
+                   
+                    <div class="input-group">
+                       
+                        <label for="num1">Enter a string or number: </label>
+                        <input type="text" name="num1" id="gtnum1">
+                        
+                        <p>&gt;</p>
+                        
+                        <label for="num2">Enter another string or number: </label>
+                        <input type="text" name="num2" id="gtnum2">
+                        
+                    </div>
 
-        <button type="button" id="submitlt" onclick="greaterThanString()">Make Comparison of string</button>
+                    <button type="button" id="submitlt" onclick="greaterThan()">Make Comparison of numbers</button>
 
-        <p id="gtresult"></p>
-
-        <ul>
-            <li>if the operands are numbers, then a numeric comparison is performed.</li>
-            <li>Ifthe operands are strings, then the character codes of each character will be compared.</li>
-            <li>If only one operand is a number then the other is converted to a number and a comparison is made.</li>
-            <li>If an operand is an object, call <i>valueOf()</i> and use its result to make a comparison whilst sticking to the rules stated above, if <i>valueOf()</i> is not available, call <i>toString()</i> and use that value according the the rules above.</li>
-            <li>If the operand is a Boolean, then it is converted to a number and a comparison is made.</li>
-        </ul>
+                    <button type="button" id="submitlt" onclick="greaterThanString()">Make Comparison of string</button>
+                    
+                    <p id="gtresult"></p>
+                    
+                </div>
+                
+                <div class="content-right">
+                   
+                    <ul>
+                        <li>if the operands are numbers, then a numeric comparison is performed.</li>
+                        <li>Ifthe operands are strings, then the character codes of each character will be compared.</li>
+                        <li>If only one operand is a number then the other is converted to a number and a comparison is made.</li>
+                        <li>If an operand is an object, call <i>valueOf()</i> and use its result to make a comparison whilst sticking to the rules stated above, if <i>valueOf()</i> is not available, call <i>toString()</i> and use that value according the the rules above.</li>
+                        <li>If the operand is a Boolean, then it is converted to a number and a comparison is made.</li>
+                    </ul>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
     </section>
 
     <script type="text/javascript" src="relational-operators.js"></script>
+    
 </body>
 
 </html>

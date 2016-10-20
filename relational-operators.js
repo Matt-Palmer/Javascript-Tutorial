@@ -6,6 +6,33 @@ var result2 = 5 < 3;
 console.log(result1);// relational operators either return true or false
 console.log(result2);
 
+var object1 = {
+    name: 'matt',
+    age: 28
+};
+
+var object2 = {
+    name: 'matt',
+    age: 28
+};
+
+var myAge = '28'
+
+console.log(object1.name != object2.name);
+
+console.log(object1.age !== myAge);
+
+console.log(myAge == object1.age);//== calculates wether the 2 variables are equal (returns true)
+
+console.log(myAge === object1.age);//=== calculates the variables are the same value and type (returns false as the types are not the same, one a string an done a number)
+
+var number1 = 4;
+var number2 = 8;
+
+var number3 = (number1 >= number2) ? number1 : number2;//this is a conditional operator, it is a shorthad equivalent of an if statement, what this is saying is if number1 is greater than or equal to number2 then  number3 wil equal number1, otherwise it will equal number2.
+
+console.log(number3);
+
 function lessThan(){
     var num1 = document.getElementById('num1').value;
     var num2 = document.getElementById('num2').value;
