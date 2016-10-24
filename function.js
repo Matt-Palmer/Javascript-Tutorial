@@ -68,3 +68,50 @@ refNum1.num1 = 100;
 console.log(refNum1);//both values changed to 100
 console.log(refNum2);
 //referenced numbers are linked to the same object when copied, so once the value of either is changed, then both will be changed. 
+
+
+
+function setName(obj){
+    obj.name = 'Matthew';
+    obj = new Object(); //this object is destroyed once the function is complete
+    obj.name = 'Zoe';
+    
+    console.log('the name inside this function is ' + obj.name); //obj.name is set to 'Zoe' this is because obj has been redefined inside the function, however this function is there to proove that functions do not pass by reference, if they did then the console.log call outside the function would also show the name 'Zoe'
+}
+
+var person = new Object();
+setName(person);
+
+var person2 = new Object();
+setName(person2);
+
+console.log('the name outside the function is ' + person.name);//containes the value 'Matthew' as functions do not pass by reference
+
+person.name = 'mick' //person.name now refers to 'mick', moving this line before the console.log above will change both .name values to 'mick'
+console.log(person.name);
+
+console.log('the name outside the function is ' + person2.name);
+
+
+var isNull = null;
+console.log(person instanceof Object);//returns true, person is an instance of an object.
+console.log(isNull instanceof Object);//returns false, null is not an instance of an object.
+
+var color = 'blue';
+
+function changeColor(){
+    var anotherColor = 'red';
+    
+    function swapColors(){
+        var tempColor = anotherColor;
+        anotherColor = color;
+        color = tempColor;
+        
+        console.log(color);
+    }
+    
+    swapColors();
+}
+
+changeColor();
+console.log(color);
